@@ -7,6 +7,7 @@
 - Definir type para campos de digitação;
 - Controlar a quantidade mínima e maxima de caracteres do input;
 - Transformar em campo em obrigatório.
+- pattern="[a-zA-Z0-9]" no html
 
 type de input
 
