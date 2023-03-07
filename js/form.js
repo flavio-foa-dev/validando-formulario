@@ -12,10 +12,10 @@ form.addEventListener('submit', (event)=> {
     // "rg": event.target.elements["rg"].value,
     // "cpf": event.target.elements["cpf"].value,
     // "aniversario": event.target.elements["aniversario"].value
-    [event.target.elements["nome"]]:event.target.elements.value
+    [event.target.elements["nome"]]: event.target.elements.value
   }
 
-  localStorage.setItem('userCad', JSON.stringify(dadosCadastro) )
+  localStorage.setItem('userCad', JSON.stringify(dadosCadastro))
 
   window.location.href = "../pages/abrir-conta-form-2.html";
 })
@@ -48,6 +48,8 @@ function validField(field) {
   if (field.name === "aniversario" && field.value !== "") {
     legalAge(field)
   }
+
+  console.log(field.validity)
 
   typeError.forEach((error) => {
     if(field.validity[error]){
