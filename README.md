@@ -22,6 +22,17 @@
 - ValidityState
 - console.log(field.validity)
 - campo.addEventListener("invalid", evento => evento.preventDefault())
+- valid = false || true
+- Encontrar as validações padrões que existem no JavaScript com o Validity State;
+- Interpretar cada tipo de erro;
+- Criar mensagens customizadas;
+- Remover o comportamento padrão de erro do HTML;
+- Salvar dados no localStorage.
+- Iniciar camêra do usuário no navegador;
+- Capturar fotografia;
+- Lidar com eventos de click;
+- Aplicar um fluxo de navegação escondendo e mostrando elementos;
+- Inserir novos dados no localStorage.
 
 type de input
 
@@ -34,6 +45,12 @@ type de input
 - password	Define um campo de senha
 - submit	Define um botão para enviar os dados
 - tel	Define um campo para telefone
+
+- valueMissing = ocorre quando deixamos o campo vazio;
+- typeMismatch = ocorre quando erramos o tipo de input no campo, como por exemplo, na inserção de um e-mail sem o símbolo @;
+- patternMismatch = ocorre especialmente no campo de CPF que possui um padrão de expressão regular. Se o input não segui-lo, este erro será ativado;
+- tooShort está relacionado aos atributos minlength e maxLength que inserimos em diversos pontos do código. Ele serve para acusar quando os padrões de comprimento do input não forem atendidos;
+-  customError se refere a erros customizados, como nos casos em que inserimos as lógicas de validação ehUmCPF e ehMaiorDeIdade.
 
 ### testando cpf
 ```
