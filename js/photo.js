@@ -23,7 +23,7 @@ btnTirarPhoto.addEventListener("click", () => {
 
   canvas.getContext('2d').drawImage(movie, 0, 0, canvas.width, canvas.height);
 
-  imagemURL = canvas.toDataURL('image/jpeg');
+  imagemURL = canvas.toDataURL('image/jpeg', 1.0);
 
   fieldCamera.style.display = "none"
   mensagem.style.display = "block"
