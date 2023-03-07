@@ -58,3 +58,11 @@ function diferencaEmAnos(data1, data2) {
   const millisecondsEmUmAno = 1000 * 60 * 60 * 24 * 365;
   return Math.abs(diff / millisecondsEmUmAno);
 }
+
+
+
+const message = "meu nome e  carlos  meu Nome e bia meu nome e joao"
+
+const result = message.replace(/nome/gi, "gracadddddddddd")
+
+console.log(result)
